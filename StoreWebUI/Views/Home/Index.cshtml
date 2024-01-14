@@ -1,0 +1,36 @@
+﻿<div class="text-center">
+    <h1 class="display-4">Welcome to Store App</h1>
+</div>
+
+<section style="width:50%;margin:auto;margin-top:50px;">
+    <h2>Please Select Product Item to get Barcode</h2>
+    <section>
+        <label>Product ID</label>
+        <input id="productId" disabled class="form-control" type="number" placeholder="Like...1" />
+    </section>
+    <section>
+        <label>Volume</label>
+        <input id="volumeId" class="form-control" type="number" placeholder="Like...2.55" />
+    </section>
+    <a onclick="GetBarcode()" class="btn btn-outline-primary">Get Barcode</a>
+    <section>
+        <span>Barcode for PRINT : </span>
+        <span id="result"></span>
+    </section>
+</section>
+
+<section style="width:50%;margin:auto;margin-top:50px;">
+    <h1>Find Product by BARCODE</h1>
+    <input id="searchInput" class="form-control" type="text" placeholder="Like...1234-AA32-1122-334A" />
+    <a onclick="Search()" class="btn btn-outline-primary">GET</a>
+</section>
+<section id="p-info"></section>
+
+<section style="width:50%;margin:auto;margin-top:50px;">
+    <a onclick="CallGetAll()" class="btn btn-outline-primary">Show All Products</a>
+    <a class="btn btn-outline-primary" href="/home/add">Add Product</a>
+    <a class="btn btn-outline-primary">Update</a>
+</section>
+
+<section id="products" style="width:60%;margin:auto;margin-top:50px;display:flex;flex-wrap:wrap;"    
+></section>
